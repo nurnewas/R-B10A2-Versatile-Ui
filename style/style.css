@@ -19,7 +19,83 @@
 .secondary-color {
   color: rgba(255, 255, 255, 0.5);
 }
+.team,
+.habits {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
+/* Change Your Habits section CSS */
+/* Change Your Habits section CSS */
+
+/* Meet Our Team */
+
+.team-tittle {
+  font-size: 3rem;
+  font-weight: 900px;
+  margin-bottom: 1rem;
+}
+.team-paragraph {
+  width: 55%;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+.team-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+}
+.content-tittle {
+  margin: auto auto 100px 20px;
+  bottom: 30px;
+  left: 10px;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+.content-description {
+  margin: auto auto -500px 20px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.content-description,
+.secondary-color {
+  /* position: absolute; */
+  bottom: 10px;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+  text-align: left;
+}
+
+.img-container {
+  width: 326px;
+  height: 273px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 18px solid rgba(0, 0, 0, 0.2);
+  border-radius: 18px;
+  background: rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Meet Our Team */
 /* footer Section */
 .main-footer-sec {
   display: flex;
@@ -36,31 +112,30 @@
 }
 .footer-tittle-middle,
 .footer-tittle-right {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .middle-footer ul,
 .right-footer ul {
   list-style-type: none;
-  padding: 0;  
+  padding: 0;
 }
 
-
 .footer-horizontal-row {
-    width: 90%;
-    margin-bottom: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.1);
-  }
-  .footer-end {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 35px;
-  }
+  width: 90%;
+  margin-bottom: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.footer-end {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
 
 /* footer responsive  */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .main-footer-sec {
     flex-direction: column;
     align-items: center;
@@ -82,5 +157,4 @@
     justify-content: start;
     align-items: start;
   }
-
 }
