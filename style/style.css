@@ -36,6 +36,12 @@ body > section {
 .brand-name {
   font-size: 2rem;
 }
+#home{
+  color: #fff;
+  border-radius: 46px;
+  padding: .7rem 1rem ;
+  background: rgb(230, 83, 60);
+}
 .navbar {
   align-items: center;
   display: flex;
@@ -52,7 +58,7 @@ body > section {
 }
 .nav-link {
   text-decoration: none;
-  color: #fff;
+  color:  rgba(255, 255, 255, 0.5);
 }
 .hamburger {
   display: none;
@@ -184,6 +190,65 @@ body > section {
 }
 /* Run an Extra  Mile Easily  */
 
+/* Trainings and Exercises Grid */
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 2, 1fr;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+
+.grid-item:hover img {
+  transform: scale(1.05);
+}
+
+.grid-item:nth-child(4),
+.grid-item:nth-child(5),
+.grid-item:nth-child(6) {
+  grid-column: auto; 
+}
+
+.grid-layout {
+  grid-template-areas:
+    "a b c"
+    "d e f";
+}
+
+.grid-item:nth-child(4) {
+  grid-column: span 2; /* For first item in second row */
+}
+.grid-item:nth-perfect pixel-b top to fade
+
+
+/* Trainings and Exercises Grid */
+
+
+
 /* Meet Our Team */
 
 .team-tittle {
@@ -288,6 +353,7 @@ footer {
   justify-content: center;
   align-items: center;
   margin-bottom: 35px;
+  margin-top: 3rem;
 }
 
 /*  responsive  */
@@ -351,5 +417,13 @@ footer {
     width: 60%;
     justify-content: start;
     align-items: start;
+  }
+  grid-layout {
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto; 
+  }
+
+  .grid-item:nth-child(4) {
+    grid-column: span 1; 
   }
 }
