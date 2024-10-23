@@ -36,10 +36,10 @@ body > section {
 .brand-name {
   font-size: 2rem;
 }
-#home{
+#home {
   color: #fff;
   border-radius: 46px;
-  padding: .7rem 1rem ;
+  padding: 0.7rem 1rem;
   background: rgb(230, 83, 60);
 }
 .navbar {
@@ -58,7 +58,7 @@ body > section {
 }
 .nav-link {
   text-decoration: none;
-  color:  rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .hamburger {
   display: none;
@@ -66,10 +66,45 @@ body > section {
 }
 /* Banner */
 .banner {
+  position: relative;
   padding-top: 4rem;
   display: flex;
   width: 85%;
   margin: 0 auto;
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
+}
+.banner-bottom {
+
+  bottom: 100px;
+  left: 65%;
+  /* transform: translateX(50%); */
+  width: 108px;
+  height: 56px;
+  text-align: center;
+  background: rgba(48, 48, 48, 0.54);
+  position: absolute;
+}
+.banner-top {
+  bottom: 400px;
+  left: 85%;
+  /* transform: translateX(50%); */
+  width: 108px;
+  height: 56px;
+  text-align: center;
+  background: rgba(48, 48, 48, 0.54);
+  position: absolute;
+}
+.banner-bottom-tittle {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.banner-bottom-num {
+  font-size: 1rem;
+  font-weight: bold;
 }
 .banner-tittle {
   font-size: 5rem;
@@ -205,7 +240,6 @@ body > section {
   overflow: hidden;
 }
 
-
 .grid-item img {
   width: 100%;
   height: 100%;
@@ -230,7 +264,7 @@ body > section {
 .grid-item:nth-child(4),
 .grid-item:nth-child(5),
 .grid-item:nth-child(6) {
-  grid-column: auto; 
+  grid-column: auto;
 }
 
 .grid-layout {
@@ -370,8 +404,23 @@ footer {
   }
   /* Nav Bar */
 
+  /* Banner Section  */
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .banner-bottom {
+    left: 5%;
+  }
+  .banner-top {
+
+    left: 75%;
+  /* Banner Section  */
   .habits-img-container-divider {
     display: flex;
+    
     flex-direction: column;
     gap: 1rem;
   }
@@ -419,11 +468,11 @@ footer {
     align-items: start;
   }
   grid-layout {
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 
   .grid-item:nth-child(4) {
-    grid-column: span 1; 
+    grid-column: span 1;
   }
 }
