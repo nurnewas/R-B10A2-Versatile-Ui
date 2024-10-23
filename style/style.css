@@ -1,3 +1,5 @@
+/* Italianno  */
+@import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap");
 /* Inter Font Awesome */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 /* Apply All The Things */
@@ -56,6 +58,44 @@ body > section {
   display: none;
   cursor: pointer;
 }
+/* Banner */
+.banner {
+  padding-top: 4rem;
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+.banner-tittle {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  width: 30rem;
+}
+.banner-description {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+  width: 55%;
+}
+.font-cng {
+  font-family: "Italianno", cursive;
+}
+.banner-btn-left {
+  background: rgb(230, 83, 60);
+}
+.banner-btn-left,
+.banner-btn-right {
+  border-radius: 42px;
+  border: none;
+  width: 15rem;
+  height: 3rem;
+  margin-top: 20px;
+}
+.banner-btn-right {
+  color: #fff;
+  background: #000;
+  border: solid 1px #fff;
+}
+/* Banner */
 /* Header section  */
 
 /* Change Your Habits section CSS */
@@ -253,7 +293,6 @@ footer {
 /*  responsive  */
 
 @media screen and (max-width: 576px) {
-  
   /* Nav Bar */
   .nav-links {
     display: none;
@@ -264,17 +303,12 @@ footer {
     display: block; /* Show the hamburger icon on small devices */
   }
   /* Nav Bar */
-  
-  
-  
-  
+
   .habits-img-container-divider {
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-
-
 
   /* Run extra ::selection */
   .run-extra {
